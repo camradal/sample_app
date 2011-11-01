@@ -21,13 +21,13 @@ describe PagesController do
 
   describe "GET 'contract'" do
     it "should be successful" do
-      get 'contract'
+      get 'contact'
       response.should be_success
     end
 
     it "should have right title" do
-      get 'contract'
-      response.should have_selector("title", :content => @base_title + " | Contract")
+      get 'contact'
+      response.should have_selector("title", :content => @base_title + " | Contact")
     end
   end
 
